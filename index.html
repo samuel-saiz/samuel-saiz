@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello, I'm Samuel</title>
+<style>
+  /* Fondo negro y fuente monospace */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    color: #00ff00;
+    font-family: monospace;
+  }
+
+  /* Canvas cubre toda la pantalla */
+  canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Mensaje central */
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .message h1, .message p {
+    margin: 0;
+    color: #00ff00;
+    text-shadow: 0 0 5px #0f0;
+  }
+</style>
+</head>
+<body>
+
+<div class="message">
+  <h1>Hello, I'm Samuel</h1>
+  <p>Learning cybersecurity.<br>Constant learning.</p>
+</div>
+
+<canvas id="matrix"></canvas>
+
+<script>
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
+
+const fontSize = 16;
+const columns = Math.floor(width / fontSize);
+
+// Array de posiciones de cada columna
+const drops = [];
+for (let i = 0; i < columns; i++) drops[i] = Math.random() * height;
+
+// Función para generar 0 o 1 aleatorio
+function binary() {
+  return Math.random() > 0.5 ? '0' : '1';
+}
+
+// Animación Matrix
+function draw() {
+  // Fondo negro semitransparente para efecto de estela
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.fillStyle = "#00ff00";
+  ctx.font = fontSize + "px monospace";
+
+  for (let i = 0; i < drops.length; i++) {
+    const text = binary();
+    ctx.fillText(text, i * fontSize, drops[i]);
+    drops[i] += fontSize;
+    if (drops[i] > height && Math.random() > 0.975) drops[i] = 0;
+  }
+}
+
+setInterval(draw, 50);
+
+// Ajustar canvas si se redimensiona
+window.addEventListener('resize', () => {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+});
+</script>
+
+</body>
+</html>
