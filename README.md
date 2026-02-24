@@ -1,5 +1,7 @@
 ## Hi there 👋
-
+<p align="center">
+  <img src="Welcome.gif" width="800">
+</p>
 <!--
 **samuel-saiz/samuel-saiz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
