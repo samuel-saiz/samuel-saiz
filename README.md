@@ -1,8 +1,4 @@
-## Hi there 👋
-<p align="center">
-  <img src="Welcome.gif" width="800">
-</p
-  # Hi, I'm Samuel Saiz 
+# Hi, I'm Samuel Saiz 
  * ASIR Student 
 * Systems, Networking and learning cibersecurity. 
 * In this profile i will share proyects, 
@@ -21,6 +17,10 @@ labs and exercices that  I consider useful, practical and creative, developed du
 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samuel-saiz)
+<p align="center">
+  <img src="Welcome.gif" width="800">
+</p
+
 
 
 
