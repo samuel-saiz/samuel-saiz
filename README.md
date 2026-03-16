@@ -1,4 +1,6 @@
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+<p align="center">
+  <img src="Welcome.gif" width="800" alt="Welcome">
+</p>
 
 # Hi, I'm Samuel Saiz 
 
@@ -29,6 +31,3 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samuel-saiz)
 
-<p align="center">
-  <img src="Welcome.gif" width="800" alt="Welcome">
-</p>
