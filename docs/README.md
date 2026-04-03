@@ -29,5 +29,4 @@
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=samuel-saiz&theme=dark&hide_border=true&border_radius=&short_numbers=true&card_width=494&hide_longest_streak=true)](https://git.io/streak-stats)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=samuel-saiz)
 
