@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/images/Welcome.gif" width="800" alt="Welcome">
+  <img src="/assets/images/Welcome.gif" width="800" alt="Welcome">
 </p>
 
 # Hi, I'm Samuel Saiz 
